@@ -6,7 +6,6 @@ import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { ErrorBusProvider } from '@/components/ErrorBus';
 import { Layout } from '@/components/Layout';
 import DashboardOverview from '@/pages/DashboardOverview';
-import { WorkflowPlaceholders } from '@/components/WorkflowPlaceholders';
 import AdminPage from '@/pages/AdminPage';
 import MitarbeitendePage from '@/pages/MitarbeitendePage';
 import MitarbeitendeDetailPage from '@/pages/MitarbeitendeDetailPage';
@@ -23,6 +22,8 @@ import PublicFormOnboardingCheckliste from '@/pages/public/PublicForm_Onboarding
 // <public:imports>
 // </public:imports>
 // <custom:imports>
+const NeuesOnboardingPage = lazy(() => import('@/pages/intents/NeuesOnboardingPage'));
+const OnboardingAbschliessenPage = lazy(() => import('@/pages/intents/OnboardingAbschliessenPage'));
 // </custom:imports>
 
 export default function App() {
@@ -39,7 +40,7 @@ export default function App() {
               {/* <public:routes> */}
               {/* </public:routes> */}
               <Route element={<Layout />}>
-                <Route index element={<><div className="mb-8"><WorkflowPlaceholders /></div><DashboardOverview /></>} />
+                <Route index element={<DashboardOverview />} />
                 <Route path="mitarbeitende" element={<MitarbeitendePage />} />
                 <Route path="mitarbeitende/:id" element={<MitarbeitendeDetailPage />} />
                 <Route path="it-ausstattung-&-zugaenge" element={<ItAusstattungZugaengePage />} />
@@ -50,6 +51,8 @@ export default function App() {
                 <Route path="onboarding-checkliste/:id" element={<OnboardingChecklisteDetailPage />} />
                 <Route path="admin" element={<AdminPage />} />
                 {/* <custom:routes> */}
+                <Route path="intents/neues-onboarding" element={<Suspense fallback={null}><NeuesOnboardingPage /></Suspense>} />
+                <Route path="intents/onboarding-abschliessen" element={<Suspense fallback={null}><OnboardingAbschliessenPage /></Suspense>} />
                 {/* </custom:routes> */}
               </Route>
             </Routes>
