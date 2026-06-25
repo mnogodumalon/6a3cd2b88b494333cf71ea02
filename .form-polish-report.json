@@ -1,0 +1,28 @@
+{
+  "entities": {
+    "Mitarbeitende": {
+      "placeholders_set": 9,
+      "defaults_keys": ["eintrittsdatum", "vertragsart"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Personalverwaltung), keine berechenbaren Felder. Nur Eintrittsdatum (today) und Vertragsart-Default (Vollzeit)"
+    },
+    "IT-Ausstattung & Zugänge": {
+      "placeholders_set": 9,
+      "defaults_keys": ["email_konto_erstellt", "vpn_zugang_eingerichtet", "zugangsdaten_uebergeben"],
+      "computed_keys": [],
+      "reason": "Bestands-/Zuordnungs-Entity ohne Preislogik oder Berechnungen. Bool-Felder starten auf false (nicht aktiviert)"
+    },
+    "Onboarding-Maßnahmen": {
+      "placeholders_set": 8,
+      "defaults_keys": ["datum_uhrzeit", "status_massnahme"],
+      "computed_keys": [],
+      "reason": "Task-Management ohne Geldberechnung. Termin-Datum=today (datetimeminute mit withTime), Status=Geplant (Anfangsstatus)"
+    },
+    "Onboarding-Checkliste": {
+      "placeholders_set": 8,
+      "defaults_keys": ["faelligkeitsdatum", "erledigt"],
+      "computed_keys": [],
+      "reason": "Task-Tracking ohne numerische Felder. Fälligkeitsdatum=today+7d (typische Aufgabenfrist), erledigt=false"
+    }
+  }
+}

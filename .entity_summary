@@ -1,0 +1,7 @@
+- Mitarbeitende (mitarbeitende): vorname[string/text], nachname[string/text], email_geschaeftlich[string/email], telefon[string/tel], eintrittsdatum[date/date], abteilung[lookup/select], position[string/text], vorgesetzte_vorname[string/text], vorgesetzte_nachname[string/text], arbeitsort[lookup/radio], vertragsart[lookup/select]
+- IT-Ausstattung & Zugänge (it_ausstattung_&_zugaenge): mitarbeitender[applookup/select], laptop_modell[string/text], betriebssystem[lookup/select], zubehoer[string/textarea], softwarelizenzen[multiplelookup/checkbox], email_konto_erstellt[bool], vpn_zugang_eingerichtet[bool], zugangsdaten_uebergeben[bool], notizen_it[string/textarea]
+  → mitarbeitender links to app_id 6a3cd29410af51d80bb8780e
+- Onboarding-Maßnahmen (onboarding_maßnahmen): mitarbeitender[applookup/select], bezeichnung[string/text], typ[lookup/select], datum_uhrzeit[date/datetimeminute], verantwortliche_vorname[string/text], verantwortliche_nachname[string/text], status_massnahme[lookup/radio], notizen_massnahme[string/textarea]
+  → mitarbeitender links to app_id 6a3cd29410af51d80bb8780e
+- Onboarding-Checkliste (onboarding_checkliste): mitarbeitender[applookup/select], aufgabe_bezeichnung[string/text], kategorie[lookup/select], faelligkeitsdatum[date/date], verantwortliche_aufgabe_vorname[string/text], verantwortliche_aufgabe_nachname[string/text], erledigt[bool], anmerkungen[string/textarea]
+  → mitarbeitender links to app_id 6a3cd29410af51d80bb8780e

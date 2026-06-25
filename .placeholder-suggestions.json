@@ -1,0 +1,44 @@
+{
+  "MitarbeitendeDialog.tsx": {
+    "vorname": "z. B. Anna",
+    "nachname": "z. B. Müller",
+    "email_geschaeftlich": "vorname.nachname@domain.de",
+    "eintrittsdatum": "Wann startet die Person?",
+    "abteilung": "Wähle eine Abteilung",
+    "position": "z. B. Senior Developer",
+    "vorgesetzte_vorname": "Vorname der/des Vorgesetzten",
+    "vorgesetzte_nachname": "Nachname der/des Vorgesetzten",
+    "vertragsart": "z. B. Vollzeit"
+  },
+  "ItAusstattungZugaengeDialog.tsx": {
+    "mitarbeitender": "Welche Person?",
+    "laptop_modell": "z. B. MacBook Pro 16",
+    "betriebssystem": "Wähle ein Betriebssystem",
+    "zubehoer": "Monitor, Keyboard, Maus, Docking Station...",
+    "softwarelizenzen": "Welche Lizenzen benötigt?",
+    "email_konto_erstellt": "E-Mail-Konto eingerichtet?",
+    "vpn_zugang_eingerichtet": "VPN verfügbar?",
+    "zugangsdaten_uebergeben": "Zugangsdaten an Person übergeben?",
+    "notizen_it": "Besonderheiten, Probleme, To-Do..."
+  },
+  "OnboardingMassnahmenDialog.tsx": {
+    "mitarbeitender": "Für welche Person?",
+    "bezeichnung": "z. B. Einführungsgespräch IT",
+    "typ": "Wähle eine Maßnahme",
+    "datum_uhrzeit": "Wann ist die Maßnahme geplant?",
+    "verantwortliche_vorname": "Wer ist verantwortlich?",
+    "verantwortliche_nachname": "Nachname der verantwortlichen Person",
+    "status_massnahme": "Wähle Status",
+    "notizen_massnahme": "Agenda, Ergebnisse, Besonderheiten..."
+  },
+  "OnboardingChecklisteDialog.tsx": {
+    "mitarbeitender": "Für welche Person?",
+    "aufgabe_bezeichnung": "z. B. Zugänge IT-System",
+    "kategorie": "Wähle Kategorie",
+    "faelligkeitsdatum": "Bis wann muss das erledigt sein?",
+    "verantwortliche_aufgabe_vorname": "Wer kümmert sich?",
+    "verantwortliche_aufgabe_nachname": "Nachname der verantwortlichen Person",
+    "erledigt": "Aufgabe abgeschlossen?",
+    "anmerkungen": "Status, Fortschritt, Notizen..."
+  }
+}

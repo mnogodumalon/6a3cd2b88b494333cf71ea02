@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "forms": [
+    {
+      "entity": "mitarbeitende",
+      "app_id": "6a3cd29410af51d80bb8780e",
+      "path": "/rest/apps/6a3cd29410af51d80bb8780e/records",
+      "allowed_fields": [
+        "vorname",
+        "nachname",
+        "email_geschaeftlich",
+        "telefon",
+        "eintrittsdatum",
+        "abteilung",
+        "position",
+        "vorgesetzte_vorname",
+        "vorgesetzte_nachname",
+        "arbeitsort",
+        "vertragsart"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Mitarbeitende — Formular"
+    },
+    {
+      "entity": "it_ausstattung_&_zugaenge",
+      "app_id": "6a3cd29b3c9b632af0e46c2b",
+      "path": "/rest/apps/6a3cd29b3c9b632af0e46c2b/records",
+      "allowed_fields": [
+        "laptop_modell",
+        "betriebssystem",
+        "zubehoer",
+        "softwarelizenzen",
+        "email_konto_erstellt",
+        "vpn_zugang_eingerichtet",
+        "zugangsdaten_uebergeben",
+        "notizen_it"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "IT-Ausstattung & Zugänge — Formular"
+    },
+    {
+      "entity": "onboarding_maßnahmen",
+      "app_id": "6a3cd29d345bd8a6cb09280e",
+      "path": "/rest/apps/6a3cd29d345bd8a6cb09280e/records",
+      "allowed_fields": [
+        "bezeichnung",
+        "typ",
+        "datum_uhrzeit",
+        "verantwortliche_vorname",
+        "verantwortliche_nachname",
+        "status_massnahme",
+        "notizen_massnahme"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Onboarding-Maßnahmen — Formular"
+    },
+    {
+      "entity": "onboarding_checkliste",
+      "app_id": "6a3cd29d933c8e906414188a",
+      "path": "/rest/apps/6a3cd29d933c8e906414188a/records",
+      "allowed_fields": [
+        "aufgabe_bezeichnung",
+        "kategorie",
+        "faelligkeitsdatum",
+        "verantwortliche_aufgabe_vorname",
+        "verantwortliche_aufgabe_nachname",
+        "erledigt",
+        "anmerkungen"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Onboarding-Checkliste — Formular"
+    }
+  ]
+}
